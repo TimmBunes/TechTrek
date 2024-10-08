@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +35,7 @@ p {
 
 /* HEADER */
 header {
-  background-color: #f4ead2;
+  background-color: #4caf50; /* Green */
   background-size: cover;
   color: #3C3633;
 }
@@ -63,13 +61,13 @@ header {
 }
 
 .brand-name {
-  color: #FF7D29;
+  color: #8B4513; /* Green */
   font-size: 24px;
   font-weight: bold;
 }
 
 .brand-name:hover {
-  color: #FF7D29;
+  color: #15f070;
 }
 
 .custom-nav-link {
@@ -83,17 +81,17 @@ header {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #FF7D29;
+  color: #8B4513; /* Brown */
 }
 
 .nav-link.active {
-  color: #FF7D29 !important;
-  border-bottom: 2px solid #FF7D29;
+  color: #8B4513 !important; /* Brown */
+  border-bottom: 2px solid #8B4513; /* Brown */
 }
 
 /* HERO SECTION */
 .hero-section {
-  background-image: url('images/Sorsogon.jpeg');
+  background-image: url('images/blue.png'); /* Updated to blue.png */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -128,7 +126,7 @@ header {
 }
 
 .hero-content h1 {
-  color: #FF7D29;
+  color: #15f070; /* Green */
   font-size: 4rem;
   font-weight: bold;
   font-family: "Frank Ruhl Libre", serif;
@@ -145,14 +143,14 @@ header {
 
 /* Plan Your Trip Button */
 .custom-btn {
-  background-color: #FF7D29;
+  background-color: #15f070; /* Green */
   color: #ffffff;
   border: none;
   animation-delay: 1.5s;
 }
 
 .custom-btn:hover {
-  background-color: #de6d21; 
+  background-color: #15f070; /* Darker green */
   color: #ffffff; 
 }
 
@@ -202,7 +200,7 @@ header {
   font-size: 2.5rem;
   font-weight: bold;
   font-family: "Frank Ruhl Libre", serif;
-  color: #FF7D29;
+  color: #15f070; /* Green */
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -382,7 +380,7 @@ header {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #FF7D29;
+  background-color: #15f070; /* Green */
   top: 0;
   bottom: 0;
   left: 50%;
@@ -451,7 +449,6 @@ header {
   order: 1;
 }
 
-
 /* Adjust for smaller screens */
 @media screen and (max-width: 768px) {
   .timeline-item {
@@ -486,7 +483,6 @@ header {
   margin-top: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
 .partners-title h3 {
@@ -557,7 +553,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: #FF7D29;
+  color: #15f070;
   transform: scale(1.2);
 }
 
@@ -569,9 +565,8 @@ footer {
 }
 
 .social-icon:hover {
-  color: #FF7D29; 
+  color: #15f070; 
 }
-
 
 .social-icon i {
   text-decoration: none;

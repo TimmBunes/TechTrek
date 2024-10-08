@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="grid-item big">
-      <img src="images/Ilagan.jpeg" alt="Bhutan">
+      <img src="images/Island.jpg" alt="Bhutan">
       <div class="overlay-text">
       </div>
     </div>

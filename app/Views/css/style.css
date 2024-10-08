@@ -16,10 +16,8 @@ p {
 }
 
 /* HEADER */
-header {
-  background-color: #f4ead2;
-  background-size: cover;
-  color: #3C3633;
+.header {
+  background-color: #4caf50; /* Green */
 }
 
 /* NAVBAR */
@@ -43,13 +41,13 @@ header {
 }
 
 .brand-name {
-  color: #FF7D29;
+  color: #15f070; /* Updated to green */
   font-size: 24px;
   font-weight: bold;
 }
 
 .brand-name:hover {
-  color: #FF7D29;
+  color: #15f070;
 }
 
 .custom-nav-link {
@@ -63,17 +61,21 @@ header {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #FF7D29;
+  color: #15f070;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #15f070;
 }
 
 .nav-link.active {
-  color: #FF7D29 !important;
-  border-bottom: 2px solid #FF7D29;
+  color: #15f070 !important;
+  border-bottom: 2px solid #15f070;
 }
 
 /* HERO SECTION */
 .hero-section {
-  background-image: url('../images/Sorsogon.jpeg');
+  background-image: url('images/stat.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -109,7 +111,7 @@ header {
 }
 
 .hero-content h1 {
-  color: #FF7D29;
+  color: #15f070; /* Updated to green */
   font-size: 4rem;
   font-weight: bold;
   /* font-family: "Archivo Black", sans-serif; */
@@ -127,14 +129,14 @@ header {
 
 /* Plan Your Trip Button */
 .custom-btn {
-  background-color: #FF7D29;
+  background-color: #15f070; /* Updated to green */
   color: #ffffff;
   border: none;
   animation-delay: 1.5s;
 }
 
 .custom-btn:hover {
-  background-color: #de6d21; /* Change to a darker shade on hover */
+  background-color: #15f070; /* Change to a darker shade on hover */
   color: #ffffff; /* Text color */
 }
 
@@ -184,7 +186,7 @@ header {
   font-size: 2.5rem;
   font-weight: bold;
   font-family: "Frank Ruhl Libre", serif;
-  color: #FF7D29;
+  color: #15f070;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -237,43 +239,6 @@ header {
     margin-bottom: 30px;
   }
 }
-
-/* ABOUT SECTION */
-/* .about-section {
-  opacity: 0; 
-  animation: fadeInUp 2s ease-out forwards; 
-  animation-delay: 1s; 
-}
-
-.about-section h3 {
-  font-size: 3rem;
-  font-weight: 600;
-}
-
-.about-section p {
-  font-size: 1.2rem;
-  font-weight: 200;
-}
-
-.about-content {
-  padding: 0 100px;
-}
-
-.about-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.about-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.col-divider {
-  width: 1px;
-  background-color: lightgray;
-} */
 
 /* IMAGE GALLERY SECTION */
 .destination-section {
@@ -401,7 +366,7 @@ header {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #FF7D29;
+  background-color: #15f070;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -470,7 +435,6 @@ header {
   order: 1;
 }
 
-
 /* Adjust for smaller screens */
 @media screen and (max-width: 768px) {
   .timeline-item {
@@ -505,7 +469,6 @@ header {
   margin-top: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
 .partners-title h3 {
@@ -576,7 +539,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: #FF7D29;
+  color: #15f070;
   transform: scale(1.2);
 }
 
@@ -588,7 +551,7 @@ footer {
 }
 
 .social-icon:hover {
-  color: #FF7D29; /* Change color on hover */
+  color: #15f070; /* Change color on hover */
 }
 
 /* Remove any extra decorations, dashes, or borders */
