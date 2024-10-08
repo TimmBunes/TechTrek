@@ -1,0 +1,667 @@
+/* GLOBAL */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+}
+
+h1 {
+  color: #3C3633;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+p {
+  color: #3C3633;
+  font-size: 0.8rem;
+}
+
+/* HEADER */
+header {
+  background-color: #f4ead2;
+  background-size: cover;
+  color: #3C3633;
+}
+
+/* NAVBAR */
+.navbar {
+  color: #3C3633;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 1000;
+  background-color: #ffffff70;
+  border-bottom: none;
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar.scrolled {
+  background-color: #ffffff;
+  color: #3C3633;
+}
+
+.brand-name {
+  color: #FF7D29;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-name:hover {
+  color: #FF7D29;
+}
+
+.custom-nav-link {
+  padding: 10px 20px !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: #3C3633;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FF7D29;
+}
+
+.nav-link.active {
+  color: #FF7D29 !important;
+  border-bottom: 2px solid #FF7D29;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-image: url('../images/Sorsogon.jpeg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 100px;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  transition: background 0.8s ease-in-out; /* Smooth background transition */
+}
+
+.hero-content {
+  position: relative;
+  /* text-align: center; */
+  z-index: 2;
+  width: 80rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s forwards ease-in-out; /* Animation for fade-in effect */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start a bit below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End in the original position */
+  }
+}
+
+.hero-content h1 {
+  color: #FF7D29;
+  font-size: 4rem;
+  font-weight: bold;
+  /* font-family: "Archivo Black", sans-serif; */
+  font-family: "Frank Ruhl Libre", serif;
+  animation-delay: 0.5s;
+}
+
+.hero-content p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  animation-delay: 1s;
+}
+
+/* Plan Your Trip Button */
+.custom-btn {
+  background-color: #FF7D29;
+  color: #ffffff;
+  border: none;
+  animation-delay: 1.5s;
+}
+
+.custom-btn:hover {
+  background-color: #de6d21; /* Change to a darker shade on hover */
+  color: #ffffff; /* Text color */
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Starts below the actual position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Ends at its normal position */
+  }
+}
+
+/* Wave Divider */
+.custom-shape-divider-bottom-1727274516 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1727274516 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-bottom-1727274516 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/* Enhanced Why Choose Us Section */
+.why-choose-us-section {
+  margin-top: 50px;
+  padding: 0px 20px;
+  background-color: #ffffff; /* Light background */
+  color: #333;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Frank Ruhl Libre", serif;
+  color: #FF7D29;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #3C3633;
+  margin-bottom: 40px;
+}
+
+.why-choose-us-block {
+  padding: 20px;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.why-choose-us-block:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.feature-icon {
+  font-size: 20px;
+  color: #ffffff; /* Icon color */
+  background-color: #6482AD; /* Light teal background for the circle */
+  border-radius: 50%; /* Make the background a circle */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px; /* Center the icon and add space below */
+}
+
+.why-choose-us-block h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #6482AD; /* Title color */
+  margin-bottom: 10px;
+}
+
+.why-choose-us-block p {
+  font-size: 1rem;
+  color: #3C3633;
+}
+
+@media (max-width: 768px) {
+  .why-choose-us-block {
+    margin-bottom: 30px;
+  }
+}
+
+/* ABOUT SECTION */
+/* .about-section {
+  opacity: 0; 
+  animation: fadeInUp 2s ease-out forwards; 
+  animation-delay: 1s; 
+}
+
+.about-section h3 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.about-content {
+  padding: 0 100px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.col-divider {
+  width: 1px;
+  background-color: lightgray;
+} */
+
+/* IMAGE GALLERY SECTION */
+.destination-section {
+  padding: 80px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.custom-grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, 300px); /* 2 rows */
+  gap: 15px; /* Gap between grid items */
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay Text */
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  text-align: left;
+}
+
+.overlay-text h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.overlay-text p {
+  font-size: 1rem;
+  margin: 5px 0 0 0;
+  opacity: 0.9;
+}
+
+/* Big and Small grid items */
+.big {
+  grid-column: span 2; /* Takes up 2 columns */
+}
+
+.small {
+  grid-column: span 1; /* Takes up 1 column */
+}
+
+/* Responsive: For tablets and smaller devices */
+@media (max-width: 992px) {
+  .custom-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    grid-template-rows: auto;
+  }
+
+  .big {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .small {
+    grid-column: span 1;
+    grid-row: auto;
+  }
+}
+
+/* Mobile: Single column layout */
+@media (max-width: 576px) {
+  .custom-grid {
+    grid-template-columns: 1fr; /* Single column layout on mobile */
+  }
+
+  .big, .small {
+    grid-column: span 1;
+    grid-row: auto;
+  }
+}
+
+/* AD BANNER SECTION */
+.ad-banner-section {
+  padding: 20px 20px;
+  background-color: #FFFFFF; 
+  text-align: center;
+  margin-top: 40px; /* Add some spacing */
+  margin-bottom: 40px;
+}
+
+.ad-banner {
+  width: 100%; /* Full width responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ITINERARY SECTION */
+.tour-timeline {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #FF7D29;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  position: relative;
+}
+
+.timeline-item .timeline-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-item .timeline-img {
+  width: 45%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.timeline-item .timeline-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.timeline-item .timeline-content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6482AD;
+  margin-bottom: 10px;
+}
+
+.timeline-item .timeline-content p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  text-align: right;
+  order: 1;
+}
+
+.timeline-item:nth-child(odd) .timeline-img {
+  order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  text-align: left;
+  order: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-img {
+  order: 1;
+}
+
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-item .timeline-img,
+  .timeline-item .timeline-content {
+    width: 100%;
+  }
+
+  .timeline::after {
+    left: 5%;
+    width: 2px;
+  }
+}
+
+/* Animation */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}
+
+/* Travel Partners Section */
+.partners-section {
+  background-color: #ffffff; /* Light grey background */
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.partners-title h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Frank Ruhl Libre", serif;
+  color: black;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+/* Grid Layout for Partner Logos */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.partner-logo img {
+  width: 180px;
+  height: auto;
+  filter: grayscale(100%); /* Make logos grey */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.partner-logo img:hover {
+  filter: grayscale(0%); /* Remove grayscale effect on hover */
+  opacity: 1;
+  transform: scale(1.03); /* Slightly enlarge the logo */
+}
+
+.partners-title h3 {
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background-color: #f5f5f5;
+  color: #3C3633;
+  margin-top: 10px;
+  margin-bottom: 0 !important;
+  padding: 15px;
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+}
+
+.p-footer {
+  color: #3C3633;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.social-links {
+  margin: 10px;
+  text-align: center;
+}
+
+.social-links a {
+  margin: 0 15px;
+  color: #3C3633;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #FF7D29;
+  transform: scale(1.2);
+}
+
+.social-icon {
+  font-size: 24px; /* Adjust icon size */
+  margin: 0 10px; /* Spacing between icons */
+  color: #3C3633; /* Icon color */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #FF7D29; /* Change color on hover */
+}
+
+/* Remove any extra decorations, dashes, or borders */
+.social-icon i {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .timeline::after {
+    display: none; /* Remove the line on mobile */
+  }
+
+  .timeline-item {
+    flex-direction: column;
+  }
+
+  .timeline-item .timeline-img,
+  .timeline-item .timeline-content {
+    width: 100%; /* Make images and text full width */
+    padding: 20px;
+  }
+
+  .timeline-item .timeline-content h3 {
+    text-align: center; /* Center align titles */
+  }
+
+  .timeline-item .timeline-content p {
+    text-align: center; /* Center align paragraph */
+  }
+  .timeline-content {
+    text-align: center;
+  }
+  /* Disable timeline content animation */
+  .timeline-item .timeline-content {
+    animation: none !important; /* Disable any keyframe animations */
+    transition: none !important; /* Disable any transitions */
+  }
+  
+  /* Disable timeline image animation */
+  .timeline-item .timeline-img {
+    animation: none !important; /* Disable any keyframe animations */
+    transition: none !important; /* Disable any transitions */
+  }
+
+  /* Disable general AOS animation if using it for timeline */
+  [data-aos] {
+    opacity: 1 !important; /* Ensure content is visible */
+    transform: none !important; /* Disable any transformations */
+    transition: none !important; /* Disable transitions */
+  }
+
+  [data-aos].aos-animate {
+    animation: none !important; /* Disable AOS animations */
+  }
+}
+
+@media (max-width: 576px) {
+  .ad-banner-svg {
+    width: 100%; /* Reduced width on mobile */
+  }
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}

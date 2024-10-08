@@ -1,0 +1,11 @@
+<?= $this->include('components/top_layer') ?>
+<?= $this->include('components/header_nav')?>
+<?= $this->include('components/hero_section') ?>  
+<?= $this->include('components/why_choose_us') ?>
+<?= $this->include('components/image_gallery') ?>
+<?= $this->include('components/ad_banner') ?>
+<?= $this->include('components/itinerary') ?>
+<?= $this->include('components/travel_partners') ?>
+<?= $this->include('components/footer') ?>
+<?= $this->include('components/bootstrap_JS') ?> 
+<?= $this->include('components/bottom_layer') ?>
